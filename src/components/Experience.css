@@ -1,0 +1,62 @@
+.experience {
+  background: var(--secondary-color);
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.experience-card {
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+.experience-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.experience-title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  letter-spacing: 0.3px;
+}
+
+.experience-company {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.experience-period {
+  font-size: 0.85rem;
+  color: var(--text-gray);
+  font-weight: 300;
+}
+
+.experience-achievements {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-achievements li {
+  padding-left: 0;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: var(--text-gray);
+  font-weight: 300;
+}
+
+@media (max-width: 968px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

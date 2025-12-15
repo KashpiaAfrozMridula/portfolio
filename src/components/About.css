@@ -1,0 +1,158 @@
+.about {
+  background: var(--secondary-color);
+}
+
+.about .section-title {
+  text-align: center;
+}
+
+.about-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 8rem;
+  margin-bottom: 0;
+}
+
+.about-carousel-content {
+  flex: 1;
+  width: 100%;
+}
+
+.carousel-container {
+  position: relative;
+  min-height: 400px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.about-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  margin-bottom: 0;
+}
+
+.about-section.active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.about-subtitle {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-gray);
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.about-text em {
+  font-style: italic;
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+.about-text strong {
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-list li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-gray);
+  margin-bottom: 0;
+  font-weight: 300;
+  padding-left: 0;
+}
+
+.carousel-btn {
+  background: transparent;
+  border: none;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease;
+  font-weight: 300;
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  color: var(--text-gray);
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: -6rem;
+  padding-top: 0;
+}
+
+.carousel-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: var(--border-color);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease;
+}
+
+.carousel-indicator.active {
+  background: var(--primary-color);
+}
+
+.carousel-indicator:hover {
+  background: var(--text-gray);
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .about-list li {
+    font-size: 1rem;
+  }
+
+  .about-carousel-wrapper {
+    padding: 0 2rem;
+  }
+
+  .carousel-btn {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+
+  .carousel-container {
+    min-height: 350px;
+  }
+}
+

@@ -1,0 +1,130 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  background: var(--secondary-color);
+}
+
+.hero-content {
+  text-align: left;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  margin-bottom: 4rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+}
+
+.btn {
+  padding: 0.75rem 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  border-bottom: 1px solid transparent;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  color: var(--text-gray);
+  border-bottom-color: var(--text-gray);
+}
+
+.btn-secondary {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+  color: var(--text-gray);
+  border-bottom-color: var(--text-gray);
+}
+
+.btn-outline {
+  color: var(--text-gray);
+  border-bottom-color: var(--text-gray);
+}
+
+.btn-outline:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.hero-snapshot {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 0;
+  padding-top: 4rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.snapshot-item {
+  text-align: left;
+}
+
+.snapshot-number {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.snapshot-label {
+  font-size: 0.85rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hero-snapshot {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+

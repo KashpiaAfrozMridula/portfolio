@@ -1,0 +1,189 @@
+.skills {
+  background: var(--secondary-color);
+}
+
+.skills-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 8rem;
+  margin-bottom: 0;
+}
+
+.skills-carousel-content {
+  flex: 1;
+  width: 100%;
+}
+
+.carousel-container {
+  position: relative;
+  min-height: 400px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.skill-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  margin-bottom: 0;
+}
+
+.skill-section.active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.skill-title {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.skill-content {
+  color: var(--text-gray);
+}
+
+.skill-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  letter-spacing: 0.3px;
+}
+
+.skill-description {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.skill-list li {
+  padding-left: 0;
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.skill-why {
+  background: transparent;
+  padding: 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+}
+
+.skill-why strong {
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.skill-why ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.skill-why ul li {
+  padding-left: 0;
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.skill-why p {
+  margin: 0;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.skill-why em {
+  font-style: italic;
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+.carousel-btn {
+  background: transparent;
+  border: none;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease;
+  font-weight: 300;
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  color: var(--text-gray);
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: -6rem;
+  padding-top: 0;
+}
+
+.carousel-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: var(--border-color);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease;
+}
+
+.carousel-indicator.active {
+  background: var(--primary-color);
+}
+
+.carousel-indicator:hover {
+  background: var(--text-gray);
+}
+
+@media (max-width: 768px) {
+  .skills-carousel-wrapper {
+    padding: 0 2rem;
+  }
+
+  .carousel-btn {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+
+  .carousel-container {
+    min-height: 350px;
+  }
+}
+

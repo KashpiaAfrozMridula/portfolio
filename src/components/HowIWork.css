@@ -1,0 +1,65 @@
+.how-i-work {
+  background: var(--secondary-color);
+}
+
+.workflow {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.workflow-step {
+  text-align: left;
+  padding: 0;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.workflow-step:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+
+.workflow-title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  letter-spacing: 0.3px;
+}
+
+.workflow-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-gray);
+  font-weight: 300;
+}
+
+.workflow-arrow {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .workflow-step {
+    padding: 1.5rem;
+  }
+
+  .workflow-icon {
+    font-size: 2rem;
+  }
+
+  .workflow-title {
+    font-size: 1.3rem;
+  }
+
+  .workflow-description {
+    font-size: 1rem;
+  }
+}
+
